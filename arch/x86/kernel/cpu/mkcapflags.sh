@@ -7,7 +7,10 @@ IN=$1
 OUT=$2
 
 (
+
+	echo "#ifndef _ASM_X86_CPUFEATURE_H"
 	echo "#include <asm/cpufeature.h>"
+	echo "#endif"
 	echo ""
 	echo "const char * const x86_cap_flags[NCAPINTS*32] = {"
 
